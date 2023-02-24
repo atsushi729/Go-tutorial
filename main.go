@@ -18,6 +18,7 @@ func main() {
 		isValidName, isValidEmail, isValidTicketNumber := validateUserInput(firstName, lastName, email, userTickets, remainingTickets)
 
 		if isValidName && isValidEmail && isValidTicketNumber {
+			// call function
 			bookTicket(remainingTickets, userTickets, bookings, firstName, lastName, email, conferenceName)
 			// call function
 			firstNames := getFirstName(bookings)
